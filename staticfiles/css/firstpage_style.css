@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  color: rgb(255, 253, 251);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.head_firstpage{
+  background-color: #444;
+  /* background-image: url(static/image/weld_header.jpg); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed;  */
+  /* background-position: center; */
+}
+
+.logo{  
+  display: flex;
+  position: absolute;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+/* Navigation */
+nav {
+  background-color: #252222;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------- */
+/* home.html */
+
+
+.home_info {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center;
+  color: rgb(9, 9, 9);
+ } 
+
+ .home_info main{
+  padding: 100px;
+}
+.home_info main div{
+  background-color: rgba(255, 255, 255, 0.307);
+  padding: 50px;
+}
+
+ 
+/* Main content */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* Sections like intro, services, etc. */
+.intro, .services, .about, .contact {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services .box{
+  border: 1px solid black;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 1rem;
+}
+
+.services ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.truss{
+  background-image: url('/static/image/truss_work_bg.jpg');
+  background-size: cover;
+}
+.gate_grill{
+  background-image: url('/static/image/gategril_bg.jpg');
+  background-size: cover;
+}
+.window_door{
+  background-image: url('/static/image/window_fame.jpg');
+  background-size: cover;
+}
+.custom{
+  background-image: url('/static/image/custom_bg.jpg');
+  background-size: cover;
+}
+
+.services ul a{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services h1{
+  font-size: 30px;
+  padding: 10px;
+  background-color: #00000080;
+}
+
+/* Footer */
+footer {
+  background-color: #2e3d49;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
