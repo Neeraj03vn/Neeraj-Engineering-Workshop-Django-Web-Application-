@@ -1,0 +1,35 @@
+{% extends 'firstpage.html' %}
+{% block title %}Home - Neeraj Engineering Workshop{% endblock %}
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/firstpage_style.css' %}">
+
+
+<section class="introduct">
+  <div class="home_info" style="background-image: url(static/image/craftsman-cutting-metal-welding_background.jpg);">
+
+    <main>
+      <div>      
+        <h1> Welcome to Neeraj Engineering Workshop</h1>
+        <h2>Precision. Strength. Reliability.</h2>
+        <h4>At Neeraj Engineering Workshop, 
+          we take pride in being one of the most 
+          trusted names in metal fabrication and welding work. 
+          With years of hands-on experience and a passion for 
+          quality, we deliver strong, reliable, and visually 
+          appealing welding solutions for homes, businesses, 
+          and industrial needs.</h4>
+
+        <h4>Whether you're building a new structure or repairing
+           an existing one, we provide end-to-end support—from 
+           material selection to final installation. 
+           Every project we take on is handled with the highest
+            level of precision and attention to detail.</h4>
+        
+        <h4>We are committed to turning your ideas into 
+          solid steel solutions that stand the test of time.</h4>      
+      </div>
+    </main>
+  </div>
+</section>
+{% endblock %}

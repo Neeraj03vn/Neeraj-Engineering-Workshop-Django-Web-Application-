@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Neeraj Engineering Workshop{% endblock %}</title>
+  <link rel="shortcut icon" href="static/image/Workshop_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/firstpage_style.css' %}">
+</head>
+<body>
+  <header class="head_firstpage" style="background-image: url();">
+    <div >
+      <img src="static/image/Workshop_logo.png" alt="" class="logo">
+    </div>
+    <h1>Neeraj Engineering Workshop</h1>
+    <p>Your trusted welding & fabrication experts</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    {% block content %}{% endblock %}
+  </div>
+
+
+  <footer>
+    <p>© 2025 Neeraj Engineering Workshop | Call: +91-904865766</p>
+  </footer>
+</body>
+</html>

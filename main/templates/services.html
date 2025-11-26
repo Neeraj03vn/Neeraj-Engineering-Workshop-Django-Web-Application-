@@ -1,0 +1,18 @@
+{% extends 'firstpage.html' %}
+{% block title %}Services - Neeraj Engineering Workshop{% endblock %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/firstpage_style.css' %}">
+<section class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <a href="/trusswork" class="truss box"><h1>Truss Work and Odu Work</h1></a>
+    <a href="/" class="box gate_grill"><h1>Metal Gates & Grills</h1></a>
+    <a href="/" class="box window_door"><h1>Window and Door frames</h1></a>
+    <a href="/" class="box custom"><h1>Custom Works</h1></a>
+    <!-- <li><a href="/"></a></li> -->
+    <!-- <li>Industrial Equipment Repair</li> -->
+  </ul>
+</section>
+{% endblock %}
